@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atzartech Hub | Welcome Portal</title>
+    <meta name="description" content="Welcome to Atzartech's digital portal. Access tools, utilities, notes, and web applications developed by Atzartech.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Animated background mesh -->
+    <div class="bg-mesh">
+        <div class="mesh-orb orb-1"></div>
+        <div class="mesh-orb orb-2"></div>
+        <div class="mesh-orb orb-3"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <i data-lucide="terminal"></i>
+                </div>
+                <h1 class="logo-title">Atzartech<span>Hub</span></h1>
+            </div>
+            <p class="subtitle">Access your collection of web tools, applications, and documents from a unified control center.</p>
+            
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Dark/Light Mode">
+                    <i data-lucide="moon"></i>
+                </button>
+                <!-- Settings & Quick Config Toggle -->
+                <button class="config-toggle-btn" id="configToggleBtn" title="How to Customize">
+                    <i data-lucide="help-circle"></i>
+                    <span>How to Customize</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Search & Filter Controls -->
+        <section class="controls-section">
+            <div class="search-box-wrapper">
+                <i data-lucide="search" class="search-icon"></i>
+                <input type="text" id="searchInput" placeholder="Search tools, notes, or apps..." autocomplete="off">
+                <button id="clearSearchBtn" class="clear-search-btn" style="display: none;">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+            
+            <div class="category-filters" id="categoryFilters">
+                <!-- Dynamically populated categories will be here, with 'All' active initially -->
+                <button class="filter-btn active" data-category="all">
+                    <i data-lucide="layers"></i> All Tools
+                </button>
+            </div>
+        </section>
+
+        <!-- App/Page Cards Grid -->
+        <main class="grid-section">
+            <div class="cards-grid" id="cardsGrid">
+                <!-- Cards will be dynamically injected here via script.js -->
+                <div class="loading-state">
+                    <div class="spinner"></div>
+                    <p>Loading your portal...</p>
+                </div>
+            </div>
+            
+            <!-- No results found state -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <i data-lucide="alert-circle"></i>
+                <h3>No Apps Found</h3>
+                <p>We couldn't find anything matching your search term. Try checking your spelling or selecting another category.</p>
+            </div>
+        </main>
+
+        <!-- Customize Guide Drawer (Hidden by default) -->
+        <div class="config-modal" id="configModal">
+            <div class="config-modal-content">
+                <div class="config-modal-header">
+                    <h3><i data-lucide="sliders"></i> Customize Your Portal</h3>
+                    <button class="close-modal-btn" id="closeModalBtn"><i data-lucide="x"></i></button>
+                </div>
+                <div class="config-modal-body">
+                    <p>You can manage and expand this portal directly via the code files:</p>
+                    <ul>
+                        <li>
+                            <strong>Change Base Domain:</strong>
+                            <p>Open <span class="file-path">script.js</span> and edit the <code>BASE_URL</code> constant at the top of the file (e.g., change it from <code>https://atzartech-prog.github.io/</code> to your own domain).</p>
+                        </li>
+                        <li>
+                            <strong>Add or Edit Pages:</strong>
+                            <p>In <span class="file-path">script.js</span>, modify the <code>PAGES_DATA</code> array. Each page is configured with:
+                            <pre><code>{
+  title: "App Name",
+  path: "repo-name/", // combined with BASE_URL
+  // OR absolute: "https://google.com", for external links
+  description: "Description of what it does",
+  icon: "lucide-icon-name", // e.g., 'book-open', 'settings'
+  category: "Utility", // for filtering
+  accentColor: "indigo" // indigo, violet, cyan, emerald, amber, rose
+}</code></pre>
+                            </p>
+                        </li>
+                        <li>
+                            <strong>Icon Library:</strong>
+                            <p>We use <a href="https://lucide.dev/icons/" target="_blank" rel="noopener">Lucide Icons</a>. You can use any icon name listed on their website in the <code>icon</code> field.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2026 Atzartech. Built with HTML, CSS, and Vanilla JS.</p>
+            <div class="footer-links">
+                <a href="https://github.com/atzartech-prog" target="_blank" rel="noopener">
+                    <i data-lucide="github"></i> GitHub Profile
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>

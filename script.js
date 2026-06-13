@@ -1,0 +1,351 @@
+/**
+ * Atzartech Hub Welcome Portal Script
+ * -----------------------------------
+ * Manage links, rendering, filters, search, and configuration.
+ */
+
+// 1. BASE CONFIGURATION
+// You can replace this base URL with any other domain or leave it empty if using absolute URLs
+const BASE_URL = 'https://atzartech-prog.github.io/';
+
+// 2. PORTAL PAGES DATA
+// Add, edit, or remove pages here. 
+// - If "path" is specified, it will be concatenated with BASE_URL.
+// - If "absolute" is specified, it will use that exact URL instead.
+// - Available accent colors: 'indigo', 'violet', 'cyan', 'emerald', 'amber', 'rose', 'blue'
+// - Available icons: Any icon name from https://lucide.dev/icons (e.g., 'book-open', 'settings', 'user')
+const PAGES_DATA = [
+    {
+        title: "Note App",
+        path: "note/",
+        description: "A lightweight, markdown-supported note-taking application for quick thoughts and organizing ideas.",
+        icon: "file-text",
+        category: "Utility",
+        accentColor: "indigo"
+    },
+    {
+        title: "App Launcher",
+        path: "app-launcher/",
+        description: "A sleek dashboard to organize, search, and quickly launch your favorite web applications.",
+        icon: "rocket",
+        category: "Utility",
+        accentColor: "violet"
+    },
+    {
+        title: "Who I Am",
+        path: "whoiam/",
+        description: "Personal profile page showcasing projects, skills, background, and contact details.",
+        icon: "user",
+        category: "Personal",
+        accentColor: "rose"
+    },
+    {
+        title: "Masjid Digital Signage",
+        path: "masjid-digital-signage/",
+        description: "Interactive digital signage application for mosques displaying prayer times, announcements, and Islamic calendar info.",
+        icon: "monitor",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "FarmLink",
+        path: "farmlink/",
+        description: "A digital hub connecting local agriculture, sustainable farming, and fresh crop distribution.",
+        icon: "sprout",
+        category: "App",
+        accentColor: "emerald"
+    },
+    {
+        title: "Awesome Font",
+        path: "awesomefont/",
+        description: "A curated collection of typographic resources, custom fonts, and styling utilities.",
+        icon: "type",
+        category: "Reference",
+        accentColor: "amber"
+    },
+    {
+        title: "Agenda",
+        path: "agenda/",
+        description: "An intuitive event planner and schedule manager to organize tasks, deadlines, and daily routines.",
+        icon: "calendar",
+        category: "Utility",
+        accentColor: "blue"
+    },
+    {
+        title: "Darsun",
+        path: "darsun/",
+        description: "Educational and learning management dashboard tailored for Islamic teachings, lessons, and studies.",
+        icon: "graduation-cap",
+        category: "App",
+        accentColor: "violet"
+    },
+    {
+        title: "Prompt Gen App",
+        path: "promptgenapp/",
+        description: "AI-powered prompt generator to craft optimized, structured instructions for large language models.",
+        icon: "sparkles",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "Mini CMS",
+        path: "minicms/",
+        description: "A lightweight, super-fast content management system to publish and manage static web pages.",
+        icon: "layout",
+        category: "Utility",
+        accentColor: "indigo"
+    },
+    {
+        title: "Man Cave",
+        path: "mancave/",
+        description: "A personal space dashboard containing entertainment widgets, news feeds, and utility apps.",
+        icon: "compass",
+        category: "Personal",
+        accentColor: "rose"
+    },
+    {
+        title: "Micro Apps",
+        path: "microapps/",
+        description: "A modular platform hosting multiple micro-services, tools, and lightweight utilities.",
+        icon: "box",
+        category: "Utility",
+        accentColor: "emerald"
+    },
+    {
+        title: "Alat Bantu Kerja",
+        path: "alatbantukerja/",
+        description: "Indonesian helper toolset designed to simplify administrative work, calculations, and data processing.",
+        icon: "briefcase",
+        category: "Utility",
+        accentColor: "blue"
+    }
+];
+
+// DOM Elements
+const cardsGrid = document.getElementById('cardsGrid');
+const searchInput = document.getElementById('searchInput');
+const clearSearchBtn = document.getElementById('clearSearchBtn');
+const categoryFiltersContainer = document.getElementById('categoryFilters');
+const noResults = document.getElementById('noResults');
+
+// Theme and Modal Elements
+const themeToggleBtn = document.getElementById('themeToggleBtn');
+const configToggleBtn = document.getElementById('configToggleBtn');
+const configModal = document.getElementById('configModal');
+const closeModalBtn = document.getElementById('closeModalBtn');
+
+// Active filter state
+let activeCategory = 'all';
+let searchQuery = '';
+
+/**
+ * Initialize Web Portal
+ */
+function initPortal() {
+    // Load saved theme preference
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+
+    // 1. Generate category filters dynamically from PAGES_DATA
+    generateCategoryFilters();
+    
+    // 2. Render all cards
+    renderCards();
+    
+    // 3. Register Event Listeners
+    setupEventListeners();
+}
+
+/**
+ * Set and apply the active theme (light or dark)
+ */
+function setTheme(theme) {
+    if (theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+        themeToggleBtn.innerHTML = '<i data-lucide="sun"></i>';
+    } else {
+        document.documentElement.removeAttribute('data-theme');
+        localStorage.setItem('theme', 'light');
+        themeToggleBtn.innerHTML = '<i data-lucide="moon"></i>';
+    }
+    
+    // Refresh the icon
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
+}
+
+/**
+ * Generate category filters dynamically
+ */
+function generateCategoryFilters() {
+    // Find unique categories
+    const categories = new Set();
+    PAGES_DATA.forEach(page => {
+        if (page.category) {
+            categories.add(page.category);
+        }
+    });
+
+    // Create buttons for each unique category
+    categories.forEach(category => {
+        const btn = document.createElement('button');
+        btn.className = 'filter-btn';
+        btn.setAttribute('data-category', category.toLowerCase());
+        
+        // Pick sub-icons depending on category
+        let iconName = 'tag';
+        if (category.toLowerCase() === 'utility') iconName = 'wrench';
+        if (category.toLowerCase() === 'app') iconName = 'play';
+        if (category.toLowerCase() === 'personal') iconName = 'user';
+        if (category.toLowerCase() === 'reference') iconName = 'bookmark';
+        
+        btn.innerHTML = `<i data-lucide="${iconName}"></i> ${category}s`;
+        categoryFiltersContainer.appendChild(btn);
+    });
+}
+
+/**
+ * Render Cards to Grid based on search query and category filters
+ */
+function renderCards() {
+    // Clear current grid contents
+    cardsGrid.innerHTML = '';
+    
+    // Filter pages
+    const filteredPages = PAGES_DATA.filter(page => {
+        // Category match
+        const matchesCategory = activeCategory === 'all' || 
+            (page.category && page.category.toLowerCase() === activeCategory);
+            
+        // Search query match
+        const searchTarget = `${page.title} ${page.description} ${page.category} ${page.path || ''}`.toLowerCase();
+        const matchesSearch = searchTarget.includes(searchQuery.toLowerCase());
+        
+        return matchesCategory && matchesSearch;
+    });
+
+    // Handle No Results state
+    if (filteredPages.length === 0) {
+        cardsGrid.style.display = 'none';
+        noResults.style.display = 'flex';
+        return;
+    } else {
+        cardsGrid.style.display = 'grid';
+        noResults.style.display = 'none';
+    }
+
+    // Generate HTML for cards
+    filteredPages.forEach(page => {
+        const targetUrl = page.absolute ? page.absolute : `${BASE_URL}${page.path || ''}`;
+        const cleanUrlHint = targetUrl.replace('https://', '').replace('http://', '');
+        
+        const cardElement = document.createElement('a');
+        cardElement.className = 'app-card';
+        cardElement.href = targetUrl;
+        cardElement.target = '_blank';
+        cardElement.rel = 'noopener';
+        cardElement.setAttribute('data-color', page.accentColor || 'indigo');
+        
+        cardElement.innerHTML = `
+            <div class="card-header">
+                <div class="card-icon-box">
+                    <i data-lucide="${page.icon || 'external-link'}"></i>
+                </div>
+                <span class="card-badge">${page.category || 'App'}</span>
+            </div>
+            <div class="card-body">
+                <h3 class="card-title">${page.title}</h3>
+                <p class="card-description">${page.description}</p>
+            </div>
+            <div class="card-footer">
+                <span class="card-link-text">Launch <i data-lucide="arrow-right"></i></span>
+                <span class="card-url-hint" title="${targetUrl}">${cleanUrlHint}</span>
+            </div>
+        `;
+        
+        cardsGrid.appendChild(cardElement);
+    });
+
+    // Reinitialize Lucide icons for dynamically added elements
+    if (window.lucide) {
+        window.lucide.createIcons();
+    }
+}
+
+/**
+ * Setup Interaction Listeners
+ */
+function setupEventListeners() {
+    // Live Search Filter
+    searchInput.addEventListener('input', (e) => {
+        searchQuery = e.target.value.trim();
+        
+        // Show/hide clear search button
+        if (searchQuery.length > 0) {
+            clearSearchBtn.style.display = 'flex';
+        } else {
+            clearSearchBtn.style.display = 'none';
+        }
+        
+        renderCards();
+    });
+
+    // Clear Search Action
+    clearSearchBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        clearSearchBtn.style.display = 'none';
+        searchInput.focus();
+        renderCards();
+    });
+
+    // Category Tabs Filter
+    categoryFiltersContainer.addEventListener('click', (e) => {
+        const clickedBtn = e.target.closest('.filter-btn');
+        if (!clickedBtn) return;
+        
+        // Toggle Active state on buttons
+        const allBtns = categoryFiltersContainer.querySelectorAll('.filter-btn');
+        allBtns.forEach(btn => btn.classList.remove('active'));
+        clickedBtn.classList.add('active');
+        
+        // Filter by category
+        activeCategory = clickedBtn.getAttribute('data-category');
+        renderCards();
+    });
+
+    // Theme Switcher Event
+    themeToggleBtn.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    });
+
+    // Modal Events
+    configToggleBtn.addEventListener('click', () => {
+        configModal.classList.add('open');
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+        configModal.classList.remove('open');
+    });
+
+    // Close Modal on clicking backdrop
+    configModal.addEventListener('click', (e) => {
+        if (e.target === configModal) {
+            configModal.classList.remove('open');
+        }
+    });
+
+    // Keyboard support: Escape closes modal
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && configModal.classList.contains('open')) {
+            configModal.classList.remove('open');
+        }
+    });
+}
+
+// Kickstart the portal on window load
+window.addEventListener('DOMContentLoaded', initPortal);
