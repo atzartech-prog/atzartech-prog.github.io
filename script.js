@@ -411,7 +411,7 @@ function setupEventListeners() {
  * Hidden Easter Egg Logic
  */
 function triggerEasterEgg() {
-    // Decrypt string: "tamyis ali" -> reverse of "ila siymat" encoded in base64
+  
     const secret = atob('aWxhIHNpeW1hdA==').split('').reverse().join('');
     
     // 1. Change portal subtitle
