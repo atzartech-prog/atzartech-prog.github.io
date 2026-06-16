@@ -15,7 +15,7 @@ const BASE_URL = 'https://atzartech-prog.github.io/';
 // - Available accent colors: 'indigo', 'violet', 'cyan', 'emerald', 'amber', 'rose', 'blue'
 // - Available icons: Any icon name from https://lucide.dev/icons (e.g., 'book-open', 'settings', 'user')
 const PAGES_DATA = [
-    {
+{
         title: "Note App",
         path: "note/",
         description: "A lightweight, markdown-supported note-taking application for quick thoughts and organizing ideas.",
@@ -164,6 +164,22 @@ const PAGES_DATA = [
         path: "quotes/",
         description: "A beautiful typography portal that displays motivational and inspiring quotes with custom styling tools.",
         icon: "quote",
+        category: "App",
+        accentColor: "amber"
+    },
+    {
+        title: "Quran & Science",
+        path: "quran-science/",
+        description: "An insightful exploration of scientific phenomena through the lens of Quranic verses and Islamic perspective.",
+        icon: "book",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "Maqolah",
+        path: "maqolah/",
+        description: "A curated collection of profound Islamic aphorisms and wisdom from scholars for daily reflection.",
+        icon: "feather",
         category: "App",
         accentColor: "amber"
     }
