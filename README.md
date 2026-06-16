@@ -67,3 +67,9 @@ Simply locate the directory in your explorer and double-click **`index.html`** t
 1. Push the files in the `homepage/` directory to a GitHub repository (e.g., named `atzartech-prog.github.io` or another repo name).
 2. Enable **GitHub Pages** in your repository settings under the `Pages` tab.
 3. Your landing portal will go live instantly at your configured address.
+
+---
+
+## 💡 Note
+*   The terminal logo icon in the header has a subtle easter egg hidden behind it.
+

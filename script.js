@@ -118,6 +118,54 @@ const PAGES_DATA = [
         icon: "briefcase",
         category: "Utility",
         accentColor: "blue"
+    },
+    {
+        title: "WP Page Generator v2",
+        path: "wppagegenerator-v2/",
+        description: "An advanced builder for generating clean, plugin-free custom HTML, CSS, and JS pages for WordPress.",
+        icon: "layout",
+        category: "Utility",
+        accentColor: "blue"
+    },
+    {
+        title: "GitHub List",
+        path: "githublist/",
+        description: "A clean dashboard list viewer to explore public repositories and projects directly from GitHub profiles.",
+        icon: "list",
+        category: "Utility",
+        accentColor: "indigo"
+    },
+    {
+        title: "Not Mini CMS",
+        path: "notminicms/",
+        description: "An alternative static website generator and content manager with enhanced themes and customization options.",
+        icon: "database",
+        category: "Utility",
+        accentColor: "violet"
+    },
+    {
+        title: "Dongeng",
+        path: "dongeng/",
+        description: "An interactive digital storytelling and storybook application featuring Indonesian folklore and fairy tales.",
+        icon: "book-open",
+        category: "App",
+        accentColor: "rose"
+    },
+    {
+        title: "TTS KBBI",
+        path: "tts-kbbi/",
+        description: "A crossword and word puzzle game based on Indonesian vocabulary, definitions, and standard KBBI dictionary entries.",
+        icon: "grid",
+        category: "App",
+        accentColor: "emerald"
+    },
+    {
+        title: "Quotes",
+        path: "quotes/",
+        description: "A beautiful typography portal that displays motivational and inspiring quotes with custom styling tools.",
+        icon: "quote",
+        category: "App",
+        accentColor: "amber"
     }
 ];
 
@@ -345,6 +393,66 @@ function setupEventListeners() {
             configModal.classList.remove('open');
         }
     });
+
+    // Easter Egg Click Handler
+    let logoClicks = 0;
+    const logoArea = document.querySelector('.logo-area');
+    if (logoArea) {
+        logoArea.addEventListener('click', () => {
+            logoClicks++;
+            if (logoClicks === 5) {
+                triggerEasterEgg();
+            }
+        });
+    }
+}
+
+/**
+ * Hidden Easter Egg Logic
+ */
+function triggerEasterEgg() {
+    // Decrypt string: "tamyis ali" -> reverse of "ila siymat" encoded in base64
+    const secret = atob('aWxhIHNpeW1hdA==').split('').reverse().join('');
+    
+    // 1. Change portal subtitle
+    const subtitle = document.querySelector('.subtitle');
+    if (subtitle) {
+        subtitle.innerHTML = `System access granted. Welcome back, <span style="color: var(--clr-emerald); font-weight: 700; border-bottom: 2px dotted var(--clr-emerald);">${secret}</span>.`;
+    }
+    
+    // 2. Add secret card dynamically
+    const hasSecretCard = PAGES_DATA.some(page => page.category === 'Classified');
+    if (!hasSecretCard) {
+        PAGES_DATA.unshift({
+            title: secret.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' '),
+            absolute: '#',
+            description: 'Classified developer portal credentials verified. Local node online.',
+            icon: 'shield-check',
+            category: 'Classified',
+            accentColor: 'emerald'
+        });
+        
+        // Re-render categories if filter filters elements
+        const filterContainer = document.getElementById('categoryFilters');
+        if (filterContainer) {
+            const allBtn = filterContainer.querySelector('[data-category="all"]');
+            filterContainer.innerHTML = '';
+            if (allBtn) filterContainer.appendChild(allBtn);
+            generateCategoryFilters();
+        }
+        
+        renderCards();
+    }
+    
+    // 3. Highlight terminal logo
+    const logoIcon = document.querySelector('.logo-icon');
+    if (logoIcon) {
+        logoIcon.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        logoIcon.style.transform = 'scale(1.2) rotate(360deg)';
+        logoIcon.style.backgroundColor = 'var(--clr-emerald)';
+        logoIcon.style.color = '#ffffff';
+        logoIcon.style.boxShadow = '0 0 20px var(--clr-emerald)';
+    }
 }
 
 // Kickstart the portal on window load

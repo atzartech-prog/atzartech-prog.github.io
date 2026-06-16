@@ -1,0 +1,39 @@
+Daftar URL GitHub Pages
+atzartech-prog/note
+➡ https://atzartech-prog.github.io/note/
+
+atzartech-prog/app-launcher
+➡ https://atzartech-prog.github.io/app-launcher/
+
+atzartech-prog/whoiam
+➡ https://atzartech-prog.github.io/whoiam/
+
+atzartech-prog/masjid-digital-signage
+➡ https://atzartech-prog.github.io/masjid-digital-signage/
+
+atzartech-prog/farmlink
+➡ https://atzartech-prog.github.io/farmlink/
+
+atzartech-prog/awesomefont
+➡ https://atzartech-prog.github.io/awesomefont/
+
+atzartech-prog/agenda
+➡ https://atzartech-prog.github.io/agenda/
+
+atzartech-prog/darsun
+➡ https://atzartech-prog.github.io/darsun/
+
+atzartech-prog/promptgenapp
+➡ https://atzartech-prog.github.io/promptgenapp/
+
+atzartech-prog/minicms
+➡ https://atzartech-prog.github.io/minicms/
+
+atzartech-prog/mancave
+➡ https://atzartech-prog.github.io/mancave/
+
+atzartech-prog/microapps
+➡ https://atzartech-prog.github.io/microapps/
+
+atzartech-prog/alatbantukerja
+➡ https://atzartech-prog.github.io/alatbantukerja/
