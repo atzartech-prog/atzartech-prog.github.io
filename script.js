@@ -182,6 +182,14 @@ const PAGES_DATA = [
         icon: "feather",
         category: "App",
         accentColor: "amber"
+    },
+        {
+        title: "Just CSS HTML",
+        path: "Justcsshtml/",
+        description: "A showcase of creative and modern web designs built purely using HTML and CSS.",
+        icon: "code",
+        category: "Web",
+        accentColor: "blue"
     }
 ];
 
