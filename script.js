@@ -230,6 +230,22 @@ const PAGES_DATA = [
         icon: "package",
         category: "App",
         accentColor: "rose"
+    },
+        {
+        title: "Favicon Generator",
+        path: "favicongenerator/",
+        description: "A quick and intuitive utility tool to generate standard web favicons and app icons from custom images.",
+        icon: "image",
+        category: "Utility",
+        accentColor: "amber"
+    },
+    {
+        title: "GitBlog MD Gen",
+        path: "gitblogmdgen/",
+        description: "A specialized markdown generator tool designed to streamline blogging workflows and content deployment via GitHub.",
+        icon: "file-code",
+        category: "Utility",
+        accentColor: "indigo"
     }
 ];
 
