@@ -124,7 +124,7 @@ const PAGES_DATA = [
         path: "wppagegenerator-v2/",
         description: "An advanced builder for generating clean, plugin-free custom HTML, CSS, and JS pages for WordPress.",
         icon: "layout",
-        category: "Utility",
+        category: "Web",
         accentColor: "blue"
     },
     {
