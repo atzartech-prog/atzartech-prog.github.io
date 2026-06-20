@@ -169,7 +169,7 @@ const PAGES_DATA = [
     },
     {
         title: "Quran & Science",
-        path: "quran-science/",
+        path: "quran_science/",
         description: "An insightful exploration of scientific phenomena through the lens of Quranic verses and Islamic perspective.",
         icon: "book",
         category: "App",
