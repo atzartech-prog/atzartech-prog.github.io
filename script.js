@@ -190,6 +190,46 @@ const PAGES_DATA = [
         icon: "code",
         category: "Web",
         accentColor: "blue"
+    },
+        {
+        title: "WP Gen Umum",
+        path: "wpgenumum/",
+        description: "A specialized WordPress page generator or template management tool designed for general web deployment purposes.",
+        icon: "layout",
+        category: "Web",
+        accentColor: "indigo"
+    },
+    {
+        title: "Hacker Via Pad",
+        path: "hackerviapad/",
+        description: "A creative web-based notepad interface tailored for developers and tech enthusiasts to log or share scripts and codes.",
+        icon: "terminal",
+        category: "Web",
+        accentColor: "emerald"
+    },
+    {
+        title: "SDM Gen Page",
+        path: "sdmgenpage/",
+        description: "An automated web landing page generator focused on human resource tracking, profile presentation, or organizational structures.",
+        icon: "users",
+        category: "Web",
+        accentColor: "violet"
+    },
+    {
+        title: "Aqidatul Awam",
+        path: "aqidatul-awam/",
+        description: "A digital translation and guide of the fundamental Islamic theology text 'Aqidatul Awam' written by Sheikh Ahmad Al-Marzuki.",
+        icon: "book-open",
+        category: "App",
+        accentColor: "teal"
+    },
+    {
+        title: "ATK Habis",
+        path: "atk-habis/",
+        description: "An inventory management app or script focused on tracking office stationary supplies (ATK) and notifying when stocks run low.",
+        icon: "package",
+        category: "App",
+        accentColor: "rose"
     }
 ];
 
