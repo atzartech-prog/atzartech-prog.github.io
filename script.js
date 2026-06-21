@@ -246,8 +246,8 @@ const PAGES_DATA = [
         icon: "file-code",
         category: "Utility",
         accentColor: "indigo"
-    }
-        {
+    },
+    {
         title: "Quran and Science (Repo)",
         path: "quranandscience/",
         description: "GitHub repository containing source code and assets for the Quran & Science exploration application.",
