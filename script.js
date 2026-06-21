@@ -302,6 +302,22 @@ const PAGES_DATA = [
         icon: "pen-tool",
         category: "Web",
         accentColor: "indigo"
+    },
+        {
+        title: "Tahlil Per Bagian",
+        path: "tahlilperbagian/",
+        description: "An interactive digital guide providing step-by-step Tahlil readings, organized clearly by sections for easier recitation.",
+        icon: "book-open",
+        category: "App",
+        accentColor: "teal"
+    },
+    {
+        title: "Sharing Caring Blog",
+        path: "blogSharingCaring/",
+        description: "A community-focused collaborative blogging platform for sharing insightful articles, tech tutorials, and caring thoughts.",
+        icon: "heart-handshake",
+        category: "Web",
+        accentColor: "emerald"
     }
 ];
 
