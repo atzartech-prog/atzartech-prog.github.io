@@ -247,6 +247,62 @@ const PAGES_DATA = [
         category: "Utility",
         accentColor: "indigo"
     }
+        {
+        title: "Quran and Science (Repo)",
+        path: "quranandscience/",
+        description: "GitHub repository containing source code and assets for the Quran & Science exploration application.",
+        icon: "github",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "Doa",
+        path: "doa/",
+        description: "A digital collection and interactive guide of daily Islamic prayers and supplications.",
+        icon: "heart",
+        category: "App",
+        accentColor: "teal"
+    },
+    {
+        title: "ThreeJS Game CTF",
+        path: "threejsgamectf/",
+        description: "A 3D Capture The Flag (CTF) web game built using Three.js for interactive cybersecurity challenges.",
+        icon: "gamepad-2",
+        category: "Web",
+        accentColor: "violet"
+    },
+    {
+        title: "CTF Game",
+        path: "ctfgame/",
+        description: "A gamified platform designed for cybersecurity enthusiasts to practice hacking, cryptography, and solving CTF challenges.",
+        icon: "shield-alert",
+        category: "App",
+        accentColor: "rose"
+    },
+    {
+        title: "Terminal Game",
+        path: "terminalgame/",
+        description: "A lightweight, CLI-styled web game played entirely through an interactive terminal interface.",
+        icon: "terminal",
+        category: "Utility",
+        accentColor: "emerald"
+    },
+    {
+        title: "Pinjem Ruang",
+        path: "pinjemruang/",
+        description: "An automated facility booking system to manage room schedules, reservations, and availability.",
+        icon: "door-open",
+        category: "App",
+        accentColor: "blue"
+    },
+    {
+        title: "My MD Blog",
+        path: "mymdblog/",
+        description: "A personal blogging platform powered by markdown files, designed for quick posting and clean presentation.",
+        icon: "pen-tool",
+        category: "Web",
+        accentColor: "indigo"
+    }
 ];
 
 // DOM Elements
