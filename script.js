@@ -321,7 +321,7 @@ const PAGES_DATA = [
     },
         {
         title: "PlayStore Purchases App",
-        path: "playstorepurchasesapp/",
+        path: "PlayStorePurchasesApp/",
         description: "An application designed to manage, track, or simulate digital purchase records from the Play Store platform.",
         icon: "shopping-bag",
         category: "Utility",
