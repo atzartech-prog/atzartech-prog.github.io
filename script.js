@@ -318,6 +318,46 @@ const PAGES_DATA = [
         icon: "heart-handshake",
         category: "Web",
         accentColor: "emerald"
+    },
+        {
+        title: "PlayStore Purchases App",
+        path: "playstorepurchasesapp/",
+        description: "An application designed to manage, track, or simulate digital purchase records from the Play Store platform.",
+        icon: "shopping-bag",
+        category: "Utility",
+        accentColor: "emerald"
+    },
+    {
+        title: "Surat Tugas App",
+        path: "surattugasapp/",
+        description: "An administrative helper application tailored for generating, tracking, and managing official assignment letters (Surat Tugas).",
+        icon: "file-text",
+        category: "Utility",
+        accentColor: "blue"
+    },
+    {
+        title: "Companion Link",
+        path: "companionlink/",
+        description: "A connectivity utility designed to bridge data, links, or quick actions between devices or complementary systems.",
+        icon: "link-2",
+        category: "Utility",
+        accentColor: "indigo"
+    },
+    {
+        title: "Font Icon App",
+        path: "fonticonapp/",
+        description: "A practical developer tool to search, preview, and implement font icons seamlessly into web or app projects.",
+        icon: "smile",
+        category: "Reference",
+        accentColor: "amber"
+    },
+    {
+        title: "Atzar MD",
+        path: "atzarmd/",
+        description: "A lightweight markdown integration or markdown-based parsing tool optimized for content delivery and structured documentation.",
+        icon: "file-code",
+        category: "Utility",
+        accentColor: "violet"
     }
 ];
 
