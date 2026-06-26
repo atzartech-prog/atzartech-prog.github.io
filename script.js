@@ -358,6 +358,54 @@ const PAGES_DATA = [
         icon: "file-code",
         category: "Utility",
         accentColor: "violet"
+    },
+        {
+        title: "Weblog MDPress",
+        path: "weblogmdpress/",
+        description: "A fast and efficient markdown-based static blog generator or CMS layout designed for seamless publishing.",
+        icon: "layout",
+        category: "Web",
+        accentColor: "indigo"
+    },
+    {
+        title: "Munjiyat",
+        path: "munjiyat/",
+        description: "An interactive digital compilation of Ayat Al-Munjiyat and protective prayers for daily Islamic recitation.",
+        icon: "book-open",
+        category: "App",
+        accentColor: "teal"
+    },
+    {
+        title: "Logbook",
+        path: "logbook/",
+        description: "A digital activity tracker and logging application to document daily tasks, progress, and work achievements.",
+        icon: "list",
+        category: "Utility",
+        accentColor: "blue"
+    },
+    {
+        title: "Vibe Coding",
+        path: "vibecoding/",
+        description: "A developer environment helper or interactive coding hub designed to enhance programming flow and productivity.",
+        icon: "terminal",
+        category: "Utility",
+        accentColor: "emerald"
+    },
+    {
+        title: "Sholat Prayer",
+        path: "sholatprayer/",
+        description: "A comprehensive digital assistant displaying precise Islamic prayer times, adhan notifications, and Qibla tracking.",
+        icon: "clock",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "Firebase Neon",
+        path: "firebaseneon/",
+        description: "A modern web integration testing database connections or real-time feature synchronization using Firebase and Neon Tech.",
+        icon: "database",
+        category: "Utility",
+        accentColor: "violet"
     }
 ];
 
