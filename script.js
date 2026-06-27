@@ -406,7 +406,15 @@ const PAGES_DATA = [
         icon: "database",
         category: "Utility",
         accentColor: "violet"
-    }
+    },
+        {
+        title: "JustBlogDB Core",
+        path: "justblogdb/",
+        description: "The central structured firebase database and configuration hub powering the decentralized static blogging network.",
+        icon: "database",
+        category: "Reference",
+        accentColor: "indigo"
+    },
 ];
 
 // DOM Elements
