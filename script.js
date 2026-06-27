@@ -414,7 +414,7 @@ const PAGES_DATA = [
         icon: "database",
         category: "Reference",
         accentColor: "indigo"
-    },
+    }
 ];
 
 // DOM Elements
