@@ -399,14 +399,6 @@ const PAGES_DATA = [
         category: "App",
         accentColor: "cyan"
     },
-    {
-        title: "Firebase Neon",
-        path: "firebaseneon/",
-        description: "A modern web integration testing database connections or real-time feature synchronization using Firebase and Neon Tech.",
-        icon: "database",
-        category: "Utility",
-        accentColor: "violet"
-    },
         {
         title: "JustBlogDB Core",
         path: "justblogdb/",
