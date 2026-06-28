@@ -414,7 +414,40 @@ const PAGES_DATA = [
         icon: "database",
         category: "Reference",
         accentColor: "indigo"
+    },
+        {
+        title: "Tutorial for Firebase",
+        path: "tutorialforfirebase/",
+        description: "A comprehensive guide and reference repository detailing structural integrations, authentication, and database features in Firebase.",
+        icon: "book-open",
+        category: "Reference",
+        accentColor: "amber"
+    },
+    {
+        title: "Man Cave Collection Firebase",
+        path: "mancavecollectionfirebase/",
+        description: "A secure cloud storage and real-time database management system backing up custom elements and configurations for the Man Cave dashboard.",
+        icon: "database",
+        category: "Utility",
+        accentColor: "violet"
+    },
+    {
+        title: "Antigravity CLI",
+        path: "antigravitycli/",
+        description: "A powerful command-line interface tool engineered to automate local project scaffolding, deployment tasks, and developer workflows.",
+        icon: "terminal",
+        category: "Utility",
+        accentColor: "emerald"
+    },
+    {
+        title: "Imunisasi App",
+        path: "imunisasi/",
+        description: "A digital health assistant platform built to track vaccination schedules, immunization histories, and infant growth logs.",
+        icon: "activity",
+        category: "App",
+        accentColor: "rose"
     }
+        
 ];
 
 // DOM Elements
