@@ -253,6 +253,33 @@ body {
     height: 16px;
 }
 
+.install-pwa-btn {
+    background: linear-gradient(135deg, var(--clr-indigo), var(--clr-violet));
+    border: none;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+.install-pwa-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(99, 102, 241, 0.35);
+    filter: brightness(1.1);
+}
+
+.install-pwa-btn i {
+    width: 16px;
+    height: 16px;
+}
+
 /* Controls Section (Search & Filter) */
 .controls-section {
     display: flex;
