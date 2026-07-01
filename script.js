@@ -438,6 +438,46 @@ const PAGES_DATA = [
         icon: "activity",
         category: "App",
         accentColor: "rose"
+    },
+        {
+        title: "Muhibbin Gus Baha",
+        path: "muhibbingusbaha/",
+        description: "A community portal or platform dedicated to sharing teachings, lectures, and wisdom from the renowned Islamic scholar Gus Baha.",
+        icon: "heart",
+        category: "App",
+        accentColor: "emerald"
+    },
+    {
+        title: "Bio Link Generator",
+        path: "biolinkgenerator/",
+        description: "A sleek landing page creator to generate customized bio links for social media profiles and personal branding.",
+        icon: "link",
+        category: "Utility",
+        accentColor: "violet"
+    },
+    {
+        title: "Tutorial for Firebase",
+        path: "tutorialforfirebase/",
+        description: "A comprehensive guide and reference repository containing practical code examples and tutorials for Firebase integration.",
+        icon: "book-open",
+        category: "Reference",
+        accentColor: "amber"
+    },
+    {
+        title: "Man Cave Collection Firebase",
+        path: "mancavecollectionfirebase/",
+        description: "A backend collection repository utilizing Firebase to store and manage dashboard widgets, content, and personal configurations.",
+        icon: "database",
+        category: "Personal",
+        accentColor: "rose"
+    },
+    {
+        title: "Antigravity CLI",
+        path: "antigravitycli/",
+        description: "A lightweight command-line interface tool built to streamline development workflows and automate routine terminal tasks.",
+        icon: "terminal",
+        category: "Utility",
+        accentColor: "indigo"
     }
         
 ];
