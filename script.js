@@ -455,31 +455,47 @@ const PAGES_DATA = [
         category: "Utility",
         accentColor: "violet"
     },
+{
+        title: "WYSIWYG Editor",
+        path: "wysiswyg-editor/",
+        description: "A rich text editor interface that allows users to create and format content visually with an instant preview.",
+        icon: "edit-3",
+        category: "Utility",
+        accentColor: "blue"
+    },
     {
-        title: "Tutorial for Firebase",
-        path: "tutorialforfirebase/",
-        description: "A comprehensive guide and reference repository containing practical code examples and tutorials for Firebase integration.",
+        title: "Taisirul Kholaq",
+        path: "taisirulkholaq/",
+        description: "A digital reference or learning platform dedicated to the classic Islamic ethics and moral teachings of Kitab Taisirul Kholaq.",
         icon: "book-open",
         category: "Reference",
         accentColor: "amber"
     },
     {
-        title: "Man Cave Collection Firebase",
-        path: "mancavecollectionfirebase/",
-        description: "A backend collection repository utilizing Firebase to store and manage dashboard widgets, content, and personal configurations.",
-        icon: "database",
-        category: "Personal",
-        accentColor: "rose"
-    },
-    {
-        title: "Antigravity CLI",
-        path: "antigravitycli/",
-        description: "A lightweight command-line interface tool built to streamline development workflows and automate routine terminal tasks.",
-        icon: "terminal",
+        title: "Kerjaan Bulanan",
+        path: "kerjaanbulanan/",
+        description: "A monthly task planner and tracking application designed to organize recurring professional duties and routines.",
+        icon: "calendar",
         category: "Utility",
         accentColor: "indigo"
+    },
+    {
+        title: "Matan Jurmiyah",
+        path: "matanjurmiyah/",
+        description: "An educational resource and interactive guide studying the fundamental Arabic grammar rules from the classic Matan Al-Ajurrumiyyah.",
+        icon: "book",
+        category: "Reference",
+        accentColor: "emerald"
+    },
+    {
+        title: "Family Tree Maker",
+        path: "familytreemaker/",
+        description: "An intuitive visualization tool to map out lineage, record ancestral history, and build comprehensive family trees.",
+        icon: "git-merge",
+        category: "App",
+        accentColor: "rose"
     }
-        
+     
 ];
 
 // DOM Elements
