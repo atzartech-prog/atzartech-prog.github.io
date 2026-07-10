@@ -494,6 +494,54 @@ const PAGES_DATA = [
         icon: "git-merge",
         category: "App",
         accentColor: "rose"
+    },
+{
+        title: "Moslem Prayer",
+        path: "moslemprayer/",
+        description: "A digital Islamic prayer assistant or repository containing structured schedules, guides, and religious resources.",
+        icon: "clock",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "Bekerja Dari Kafe",
+        path: "bekerjadarikafe/",
+        description: "A lifestyle productivity hub or workspace finder tailored for remote workers and digital nomads looking for cafe environments.",
+        icon: "coffee",
+        category: "Web",
+        accentColor: "amber"
+    },
+    {
+        title: "Ya Arhamar Rahimin",
+        path: "yaarhamarrahimin/",
+        description: "An interactive digital compilation focused on selected dhikr, invocations, and specific supplications for Islamic reflection.",
+        icon: "heart",
+        category: "App",
+        accentColor: "teal"
+    },
+    {
+        title: "Sholawat",
+        path: "sholawat/",
+        description: "A curated collection and guide of Islamic prophetic praises (Sholawat) for daily recitation and spiritual enrichment.",
+        icon: "music",
+        category: "App",
+        accentColor: "emerald"
+    },
+    {
+        title: "SheetJS and Friend",
+        path: "sheetjsandfriend/",
+        description: "A utility integration and implementation hub exploring advanced spreadsheet processing using SheetJS alongside modern web libraries.",
+        icon: "file-spreadsheet",
+        category: "Utility",
+        accentColor: "indigo"
+    },
+    {
+        title: "SheetJS Learning",
+        path: "sheetjslearning/",
+        description: "A comprehensive learning repository and practical guide for parsing, writing, and manipulating Excel files via JavaScript.",
+        icon: "book-open",
+        category: "Reference",
+        accentColor: "blue"
     }
      
 ];
