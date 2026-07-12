@@ -542,6 +542,22 @@ const PAGES_DATA = [
         icon: "book-open",
         category: "Reference",
         accentColor: "blue"
+    },
+        {
+        "title": "Fortyman",
+        "path": "fortyman/",
+        "description": "A specialized dashboard and management utility designed to streamline operations, data tracking, and workflow coordination.",
+        "icon": "users",
+        "category": "Utility",
+        "accentColor": "cyan"
+    },
+    {
+        "title": "Learning for CLASP",
+        "path": "learningforclasp/",
+        "description": "A comprehensive reference and practical guide for managing Google Apps Script projects locally using the CLASP CLI.",
+        "icon": "book-open",
+        "category": "Reference",
+        "accentColor": "orange"
     }
      
 ];
