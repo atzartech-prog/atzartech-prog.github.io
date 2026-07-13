@@ -558,6 +558,38 @@ const PAGES_DATA = [
         "icon": "book-open",
         "category": "Reference",
         "accentColor": "orange"
+    },
+        {
+        title: "Habit Treadmill",
+        path: "habittreadmill/",
+        description: "A gamified habit tracker designed to break repetitive cycles, build consistent routines, and measure personal productivity progress over time.",
+        icon: "activity",
+        category: "Utility",
+        accentColor: "rose"
+    },
+    {
+        title: "Belajar Saham",
+        path: "belajarsaham/",
+        description: "An educational platform and reference guide tailored for beginners to learn stock market basics, technical analysis, and investment strategies.",
+        icon: "trending-up",
+        category: "Reference",
+        accentColor: "emerald"
+    },
+    {
+        title: "Saham ETF Newbie",
+        path: "sahametfnewbie/",
+        description: "A comprehensive guide and tracker specifically built for stock market beginners exploring Exchange-Traded Funds (ETFs) and diversified investing.",
+        icon: "pie-chart",
+        category: "Reference",
+        accentColor: "blue"
+    },
+    {
+        title: "Undian Tuan Rumah Tahlil",
+        path: "undiantuanrumahtahlil/",
+        description: "A digital lottery utility built to fairly select the next host for recurring community Tahlil gatherings and events.",
+        icon: "dices",
+        category: "Utility",
+        accentColor: "amber"
     }
      
 ];
