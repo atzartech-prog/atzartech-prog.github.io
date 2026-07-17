@@ -590,6 +590,46 @@ const PAGES_DATA = [
         icon: "dices",
         category: "Utility",
         accentColor: "amber"
+    },
+        {
+        title: "Mini Koperasi",
+        path: "minikoperasi/",
+        description: "A management application for small cooperatives designed to track member savings, loans, and financial transactions efficiently.",
+        icon: "briefcase",
+        category: "App",
+        accentColor: "emerald"
+    },
+    {
+        title: "MyPRD",
+        path: "myprd/",
+        description: "A documentation and planning utility focused on creating structured Product Requirements Documents to streamline development workflows.",
+        icon: "file-text",
+        category: "Utility",
+        accentColor: "indigo"
+    },
+    {
+        title: "Learning REST API",
+        path: "learningrestapi/",
+        description: "A comprehensive learning repository dedicated to understanding RESTful API architecture, endpoint design, and implementation practices.",
+        icon: "server",
+        category: "Reference",
+        accentColor: "blue"
+    },
+    {
+        title: "Split Bill App",
+        path: "splitbillapp/",
+        description: "A practical utility designed to calculate and divide shared expenses fairly among friends, family, or groups.",
+        icon: "dollar-sign",
+        category: "Utility",
+        accentColor: "rose"
+    },
+    {
+        title: "Learning n8n",
+        path: "learningaboutn8n/",
+        description: "A detailed guide and practice space for mastering n8n workflow automation, node integration, and task orchestration.",
+        icon: "git-branch",
+        category: "Reference",
+        accentColor: "violet"
     }
      
 ];
