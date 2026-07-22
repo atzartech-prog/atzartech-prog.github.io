@@ -630,7 +630,71 @@ const PAGES_DATA = [
         icon: "git-branch",
         category: "Reference",
         accentColor: "violet"
-    }
+    },
+        {
+        title: "Otomatisasi Python Flask",
+        path: "otomatisasipythonflask/",
+        description: "A Python Flask repository dedicated to automating repetitive backend tasks, web scripting, and server workflows.",
+        icon: "terminal",
+        category: "Utility",
+        accentColor: "emerald"
+    },
+    {
+        title: "Otomasi Kantor Flask",
+        path: "otomasikantorflask/",
+        description: "A web application built with Flask focused on automating administrative office operations and routine document processing.",
+        icon: "briefcase",
+        category: "Utility",
+        accentColor: "indigo"
+    },
+    {
+        title: "Belajar Vercel Supabase",
+        path: "belajarvercelsupabase/",
+        description: "A full-stack learning repository showcasing modern web app deployment on Vercel backed by Supabase database and auth services.",
+        icon: "database",
+        category: "Reference",
+        accentColor: "violet"
+    },
+    {
+        title: "Repo Sholawat",
+        path: "reposholawat/",
+        description: "A dedicated repository storing prophetic praises, lyrics, and Islamic audio resources for easy digital access.",
+        icon: "music",
+        category: "Reference",
+        accentColor: "teal"
+    },
+    {
+        title: "Belajar Capacitor",
+        path: "belajarcapacitor/",
+        description: "A practical guide and project template for converting modern web apps into cross-platform native mobile applications using Capacitor.",
+        icon: "smartphone",
+        category: "Reference",
+        accentColor: "blue"
+    },
+    {
+        title: "Apache Cordova",
+        path: "apache-cordova/",
+        description: "An experimental workspace and implementation guide for building hybrid mobile apps using Apache Cordova plugins and web technologies.",
+        icon: "cpu",
+        category: "Utility",
+        accentColor: "amber"
+    },
+    {
+        title: "About PWA",
+        path: "aboutpwa/",
+        description: "A comprehensive reference exploring Progressive Web App (PWA) standards, service workers, offline capabilities, and manifest configs.",
+        icon: "globe",
+        category: "Reference",
+        accentColor: "cyan"
+    },
+    {
+        title: "Office AI Vercel",
+        path: "office-ai-vercel/",
+        description: "An AI-powered productivity workspace deployed on Vercel designed to streamline office tasks and document analysis.",
+        icon: "sparkles",
+        category: "App",
+        accentColor: "rose"
+    },
      
 ];
 
