@@ -695,6 +695,62 @@ const PAGES_DATA = [
         category: "App",
         accentColor: "rose"
     },
+        {
+        title: "Vibe Engineering Term",
+        path: "vibeengineeringterm/",
+        description: "A curated glossary and reference guide covering modern software engineering terminology and concepts.",
+        icon: "terminal",
+        category: "Reference",
+        accentColor: "indigo"
+    },
+    {
+        title: "GAS Google Stitch",
+        path: "gasgooglestich/",
+        description: "Google Apps Script automation tools and workflows to stitch together Google Workspace services.",
+        icon: "cpu",
+        category: "Utility",
+        accentColor: "violet"
+    },
+    {
+        title: "Learning Laragon",
+        path: "learninglaragon/",
+        description: "Guides and documentation for mastering the Laragon local web development environment.",
+        icon: "server",
+        category: "Tutorial",
+        accentColor: "emerald"
+    },
+    {
+        title: "Learning SQLite",
+        path: "learningsqlite/",
+        description: "Practical tutorials, query examples, and best practices for working with SQLite databases.",
+        icon: "database",
+        category: "Tutorial",
+        accentColor: "cyan"
+    },
+    {
+        title: "Cyberdeck Tutorial",
+        path: "cyberdecktutorial/",
+        description: "A guide on building, customizing, and setting up hardware and software for cyberdeck setups.",
+        icon: "hard-drive",
+        category: "Tutorial",
+        accentColor: "amber"
+    },
+    {
+        title: "DB for JS",
+        path: "dbforjs/",
+        description: "Lightweight database utilities and helpers designed for JavaScript runtime environments.",
+        icon: "database",
+        category: "Utility",
+        accentColor: "blue"
+    },
+    {
+        title: "Import File to LocalStorage",
+        path: "importfiletolocalstorage/",
+        description: "A browser-based utility tool to easily parse and save local files directly into web LocalStorage.",
+        icon: "upload",
+        category: "Utility",
+        accentColor: "rose"
+    }
      
 ];
 
