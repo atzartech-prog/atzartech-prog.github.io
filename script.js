@@ -750,6 +750,46 @@ const PAGES_DATA = [
         icon: "upload",
         category: "Utility",
         accentColor: "rose"
+    },
+        {
+        title: "Stack Pairing",
+        path: "stackpairing/",
+        description: "A developer tool or utility designed to analyze, recommend, and configure optimal tech stack combinations for projects.",
+        icon: "layers",
+        category: "Utility",
+        accentColor: "indigo"
+    },
+    {
+        title: "Chatbot Python RAG",
+        path: "chatbotpythonrag/",
+        description: "A Python-powered conversational AI application utilizing Retrieval-Augmented Generation (RAG) for smart context-aware responses.",
+        icon: "message-square",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "Blogger Antigravity",
+        path: "bloggerantigravity/",
+        description: "An automated or accelerated blogging platform framework designed for smooth deployment and content workflow.",
+        icon: "edit-3",
+        category: "Web",
+        accentColor: "emerald"
+    },
+    {
+        title: "Stitch Antigravity",
+        path: "sticthantigravity/",
+        description: "A modular integration or stitching utility engineered to seamlessly connect multiple micro-services and web tools.",
+        icon: "cpu",
+        category: "Utility",
+        accentColor: "violet"
+    },
+    {
+        title: "Auto Blogger",
+        path: "autoblogger/",
+        description: "An automated publishing tool built to generate, schedule, and distribute blog content efficiently.",
+        icon: "sparkles",
+        category: "Utility",
+        accentColor: "rose"
     }
      
 ];
