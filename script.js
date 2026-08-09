@@ -790,6 +790,62 @@ const PAGES_DATA = [
         icon: "sparkles",
         category: "Utility",
         accentColor: "rose"
+    },
+        {
+        title: "GSpreadsheet Antigravity",
+        path: "gspreadsheetantygravity/",
+        description: "A specialized integration and automation script suite designed to seamlessly interface Google Spreadsheets with backend tasks.",
+        icon: "file-spreadsheet",
+        category: "Utility",
+        accentColor: "emerald"
+    },
+    {
+        title: "HTMX PocketBase",
+        path: "htmxpocketbase/",
+        description: "A modern full-stack web application structure pairing HTMX for dynamic frontend interactions with PocketBase for backend data.",
+        icon: "database",
+        category: "Web",
+        accentColor: "violet"
+    },
+    {
+        title: "Google Colab",
+        path: "googlecollab/",
+        description: "A curated collection of Google Colaboratory notebooks, interactive Python scripts, and experimental cloud code setups.",
+        icon: "code",
+        category: "Reference",
+        accentColor: "amber"
+    },
+    {
+        title: "Otaku Card",
+        path: "otakucard/",
+        description: "An interactive web card application for anime, manga, and pop-culture enthusiasts to display or collect digital fan cards.",
+        icon: "credit-card",
+        category: "App",
+        accentColor: "rose"
+    },
+    {
+        title: "Kartun Anak",
+        path: "kartunanak/",
+        description: "A child-friendly interactive digital portal featuring curated children's animation, educational videos, and fun activities.",
+        icon: "tv",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "Notebook Jupyter Colab",
+        path: "notebook-jupyter-colab/",
+        description: "A structured learning and development workspace housing Jupyter and Google Colab notebooks for data analysis and testing.",
+        icon: "book-open",
+        category: "Reference",
+        accentColor: "orange"
+    },
+    {
+        title: "Hustle Remote Hub",
+        path: "hustleremotehub/",
+        description: "A comprehensive dashboard and remote workspace aggregator providing tools, resources, and job tracking for remote professionals.",
+        icon: "globe",
+        category: "Web",
+        accentColor: "blue"
     }
      
 ];
