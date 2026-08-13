@@ -846,7 +846,23 @@ const PAGES_DATA = [
         icon: "globe",
         category: "Web",
         accentColor: "blue"
-    }
+    },
+        {
+        title: "Repo Masjid On Malang",
+        path: "repomasjidonmalang/",
+        description: "A digital repository and information system dedicated to mapping and managing mosque data across the Malang area.",
+        icon: "map-pin",
+        category: "App",
+        accentColor: "cyan"
+    },
+    {
+        title: "PHP Google Drive Integration",
+        path: "phpgoogledrive/",
+        description: "A PHP-based utility library designed to simplify seamless integration and file management with the Google Drive API.",
+        icon: "hard-drive",
+        category: "Utility",
+        accentColor: "emerald"
+    },
      
 ];
 
