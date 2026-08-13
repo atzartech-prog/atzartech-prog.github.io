@@ -862,7 +862,7 @@ const PAGES_DATA = [
         icon: "hard-drive",
         category: "Utility",
         accentColor: "emerald"
-    },
+    }
      
 ];
 
