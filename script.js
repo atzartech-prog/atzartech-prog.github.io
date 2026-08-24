@@ -862,6 +862,22 @@ const PAGES_DATA = [
         icon: "hard-drive",
         category: "Utility",
         accentColor: "emerald"
+    },
+        {
+        title: "Masterclass Obsidian",
+        path: "masterclassobsidian/",
+        description: "A comprehensive guide and repository for mastering Obsidian, note-taking strategies, and knowledge management.",
+        icon: "book-open",
+        category: "Reference",
+        accentColor: "violet"
+    },
+    {
+        title: "PHP Login Google Auth",
+        path: "phplogingoogleauth/",
+        description: "A practical implementation of Google OAuth 2.0 authentication integration using PHP.",
+        icon: "shield-check",
+        category: "Utility",
+        accentColor: "emerald"
     }
      
 ];
