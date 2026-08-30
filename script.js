@@ -878,6 +878,14 @@ const PAGES_DATA = [
         icon: "shield-check",
         category: "Utility",
         accentColor: "emerald"
+    }, 
+        {
+        title: "PRoot Debian AGY CLI",
+        path: "https://github.com/atzartech-prog/prootdebianagycli",
+        description: "A lightweight PRoot-based Debian environment and CLI utility setup for Android/Termux environments.",
+        icon: "terminal",
+        category: "Utility",
+        accentColor: "rose"
     }
      
 ];
