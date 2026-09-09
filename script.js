@@ -886,6 +886,14 @@ const PAGES_DATA = [
         icon: "terminal",
         category: "Utility",
         accentColor: "rose"
+    },
+        {
+        title: "Belajar WP Site Editor",
+        path: "belajarwpsiteditor/",
+        description: "An interactive learning guide and reference for mastering the modern WordPress Site Editor and block themes.",
+        icon: "layout",
+        category: "Reference",
+        accentColor: "blue"
     }
      
 ];
