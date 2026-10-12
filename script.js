@@ -894,6 +894,78 @@ const PAGES_DATA = [
         icon: "layout",
         category: "Reference",
         accentColor: "blue"
+    },
+        {
+        title: "Android Mod via AGY CLI",
+        path: "androidmodviaagycl/",
+        description: "Tools, scripts, and workflows for modifying Android applications using command-line interface tools.",
+        icon: "smartphone",
+        category: "Utility",
+        accentColor: "amber"
+    },
+    {
+        title: "Catatan Ecolynux",
+        path: "catatanecolynux/",
+        description: "Personal notes, guides, and documentation on Linux systems, administration, and custom configurations.",
+        icon: "file-text",
+        category: "Reference",
+        accentColor: "emerald"
+    },
+    {
+        title: "Belajar Mantiq",
+        path: "belajarmantiq/",
+        description: "A study guide and reference resource covering classical logic (ilm al-mantiq) principles and reasoning.",
+        icon: "book-open",
+        category: "Reference",
+        accentColor: "indigo"
+    },
+    {
+        title: "TTS Nusantara",
+        path: "https://github.com/atzartech-prog/tts-nusantara",
+        description: "Text-to-Speech resource and engine setup focusing on Indonesian regional languages and accents.",
+        icon: "volume-2",
+        category: "Utility",
+        accentColor: "violet"
+    },
+    {
+        title: "Jadwal Sholat Adzan",
+        path: "https://github.com/atzartech-prog/jadwal-sholat-adzan",
+        description: "An Islamic prayer time calculator and adzan notification system utility.",
+        icon: "clock",
+        category: "Utility",
+        accentColor: "teal"
+    },
+    {
+        title: "Miniserver Control Panel",
+        path: "https://github.com/atzartech-prog/miniserver-control-panel",
+        description: "Lightweight web control panel interface for managing home servers or micro-server setups.",
+        icon: "sliders",
+        category: "Utility",
+        accentColor: "cyan"
+    },
+    {
+        title: "Al-Quran Indonesia",
+        path: "https://github.com/atzartech-prog/al-quran-indonesia",
+        description: "Digital Quran repository featuring Indonesian translation, verse navigation, and audio recitations.",
+        icon: "book",
+        category: "Reference",
+        accentColor: "emerald"
+    },
+    {
+        title: "Buat EXE Python",
+        path: "buatexepython/",
+        description: "A step-by-step guide and utility scripts for bundling Python scripts into standalone Windows EXE executables.",
+        icon: "box",
+        category: "Tutorial",
+        accentColor: "blue"
+    },
+    {
+        title: "Cyberdeck Linux AI Agent",
+        path: "cyberdecklinuxaiagent/",
+        description: "Integration setup combining customized Linux cyberdeck setups with local AI agent capabilities.",
+        icon: "cpu",
+        category: "App",
+        accentColor: "rose"
     }
      
 ];
